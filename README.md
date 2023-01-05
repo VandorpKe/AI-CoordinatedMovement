@@ -10,3 +10,4 @@ This will be a simple implementation on how you could add coordinated movement t
 
 ### Navigation
 
+We need a form of navigation that gets us through obstacles and to our chosen destination. We will be using A* pathfinding to navigate our units around the field. It supports dynamic scenes that are constantly changing, works on moving objects, supports elevation and works in both 2D and 3D. This makes it really versatile.
