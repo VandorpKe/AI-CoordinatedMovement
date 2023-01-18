@@ -10,4 +10,4 @@ This will be a simple implementation on how you could add coordinated movement t
 
 ### Selection
 
-To be able to move units around the field we are first gonna need the ability to select some units. This can be done by a number of ways but I have chosen for an easy and functional route. You will be able to select a unit with just LeftClick or by Shift-LeftClicking you can select multiple units. There's also the option to Click and Drag on the screen to select multiple units.
+To be able to move units around the field we are first gonna need the ability to select some units. This can be done by a number of ways, the mosst common ways are as followed. You will be able to select a unit with just LeftClick or by Shift-LeftClicking you can select multiple units. There's also the option to Click and Drag on the screen to select multiple units.
