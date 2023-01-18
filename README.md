@@ -16,4 +16,6 @@ To not confuse the player while selecting, we have to visualize this selection r
 
 ### Navigation
 
-Unity has a built in navigation mesh that you can bake on you world.
+Unity has a built in navigation mesh that you can bake on you world. This navigation mesh will be used to easily guide the units around the field. This is ofcourse just a simple solution, as it will bring some problems forth.
+
+As we are moving as a group to a certain destination, it is not possible for all units to reach this goal destination. They will try to overlap and push the units to reach their destination, but that is also the destination of the other units in that group. This is one of the problems that we will try to solve.
