@@ -8,6 +8,6 @@ This will be a simple implementation on how you could add coordinated movement t
 
 ## Implementation
 
-### Navigation
+### Selection
 
-We need a form of navigation that gets us through obstacles and to our chosen destination. We will be using A* pathfinding to navigate our units around the field. It supports dynamic scenes that are constantly changing, works on moving objects, supports elevation and works in both 2D and 3D. This makes it really versatile.
+To be able to move units around the field we are first gonna need the ability to select some units. This can be done by a number of ways but I have chosen for an easy and functional route. You will be able to select a unit with just LeftClick or by Shift-LeftClicking you can select multiple units. There's also the option to Click and Drag on the screen to select multiple units.
