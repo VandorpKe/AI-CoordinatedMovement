@@ -11,3 +11,9 @@ This will be a simple implementation on how you could add coordinated movement t
 ### Selection
 
 To be able to move units around the field we are first gonna need the ability to select some units. This can be done by a number of ways, the mosst common ways are as followed. You will be able to select a unit with just LeftClick or by Shift-LeftClicking you can select multiple units. There's also the option to Click and Drag on the screen to select multiple units.
+
+To not confuse the player while selecting, we have to visualize this selection rectangle. This will give a nice and clean visual feedback on which units will be selected. These will be the ones that are in this rectangle ofcourse. It's best to also visualize which units we have selected.
+
+### Navigation
+
+Unity has a built in navigation mesh that you can bake on you world.
