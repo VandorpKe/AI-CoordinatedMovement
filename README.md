@@ -32,11 +32,13 @@ Now here is a big but, we can NOT use them together on a unit. Of course there i
 
 ### Formation
 
-As seen already above, it is possible to move the agents as a square. This is calculated by the clicked point on the plane. When you click you will automatically calculate all the points around that point that is possible to go to. So there is already a grid for you ready when you have clicked. The algorithm that I have made isn't the most optimal or efficient but it is the easiest for me to understand.
+As seen already above, it is possible to move the agents as a square. This is calculated by the clicked point on the plane. When you click you will automatically calculate all the points around that point that is possible to go to for the amount of agents that are selected. So there is already a grid for you ready when you have clicked. The algorithm that I have made isn't the most optimal or efficient but it is the easiest for me to understand.
 
-![image](https://user-images.githubusercontent.com/113976115/213515959-f8b7a99a-e308-4200-821a-24476e07ab8d.png)
+![image](https://user-images.githubusercontent.com/113976115/213533542-a2f8f12a-0ebf-4a48-82a4-819c74e44b07.png)
 
-First we have to add our 'startPoint' to our 'listOfPoints'. The part above is the first for all the corners, the middle nodes of the rectangle ofcourse should only be calculated for the 'topLeft' corner and the 'botRight' corner. As this will fill in the gaps inbetween nicely. We add all those points to a list and will use that later to move the units to that point in the list.
+First we have to add our 'startPoint' to our 'listOfPoints'. Then it will make a spiral grid around the unit with the amount of spacing that you have given it with the 'directionX'.
+
+There is and optimization in there that will thake the shortest path to the next point, but this is only relevant when you are making a new rectangle or circle. When you try to calculate the shortest distance when you want yo move your formation, it will screw up the formation.
 
 #### Different formations
 
