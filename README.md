@@ -38,7 +38,9 @@ As seen already above, it is possible to move the agents as a square. This is ca
 
 First we have to add our 'startPoint' to our 'listOfPoints'. Then it will make a spiral grid around the unit with the amount of spacing that you have given it with the 'directionX'.
 
-There is and optimization in there that will thake the shortest path to the next point, but this is only relevant when you are making a new rectangle or circle. When you try to calculate the shortest distance when you want yo move your formation, it will screw up the formation.
+There is and optimization in there that will thake the shortest path to the next point, but this is only relevant when you are making a new rectangle or circle. When you try to calculate the shortest distance when you want yo move your formation, it will screw up the formation. But in case you were wondering this is it:
+
+![image](https://user-images.githubusercontent.com/113976115/213534319-322b146c-5358-42ae-839b-01a11750f90f.png)
 
 #### Different formations
 
