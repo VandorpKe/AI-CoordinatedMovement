@@ -36,6 +36,8 @@ As seen already above, it is possible to move the agents as a square. This is ca
 
 ![image](https://user-images.githubusercontent.com/113976115/213533542-a2f8f12a-0ebf-4a48-82a4-819c74e44b07.png)
 
+![image](https://user-images.githubusercontent.com/113976115/213535293-ebb73b79-caae-412e-8fde-d11ee0b43f60.png)
+
 First we have to add our 'startPoint' to our 'listOfPoints'. Then it will make a spiral grid around the unit with the amount of spacing that you have given it with the 'directionX'.
 
 There is and optimization in there that will thake the shortest path to the next point, but this is only relevant when you are making a new rectangle or circle. When you try to calculate the shortest distance when you want yo move your formation, it will screw up the formation. But in case you were wondering this is it:
@@ -49,3 +51,13 @@ There are of course more than one possible ways than just a rectangle ex. circle
 You can select a preset formation by the following :
 - [C] Will set the preset after you click to circle, so this will not change instantly.
 - [R] Will set the preset to rectangle.
+
+## State
+
+Currently the formation is very basic. There is no efficiency and it's not perfect but it's a very basic implementation if coordinated movement.
+
+## Sources
+
+- https://sandruski.github.io/RTS-Group-Movement/
+- https://www.gamedeveloper.com/programming/group-pathfinding-movement-in-rts-style-games
+- https://www.gamedeveloper.com/blogs/rts-unit-group-movement-deterrence---video-devlog-5
