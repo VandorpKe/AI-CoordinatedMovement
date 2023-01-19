@@ -26,3 +26,6 @@ A problem that occurs is that the units will push eachother around to get to the
 
 Now here is a big but, we can NOT use them together on a unit. Of course there is a way to get around that. When we initiate an unit we'll just disable the 'NavMeshObstacle'. Now when the unit is stationary we'll have to use our 'NavMeshObstacle' to bake our position. The order that we enable and disable our meshes is very important here, we first want to disable our 'NavMeshAgent' and only after that we enable out 'NavMeshObstacle'. In reverse we'll have to wait a frame to enable out 'NavMeshAgent' again or ther will be shifting.
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/113976115/213511720-6df2b7de-02d8-4226-b3ae-b33e7689c1b6.gif)
+
+![image](https://user-images.githubusercontent.com/113976115/213511905-ae733bee-cc5f-41a6-b2d8-e92055f9a3dc.png)
+
