@@ -19,3 +19,9 @@ To not confuse the player while selecting, we have to visualize this selection r
 Unity has a built in navigation mesh that you can bake on you world. This navigation mesh will be used to easily guide the units around the field. This is ofcourse just a simple solution, as it will bring some problems forth.
 
 As we are moving as a group to a certain destination, it is not possible for all units to reach this goal destination. They will try to overlap and push the units to reach their destination, but that is also the destination of the other units in that group. This is one of the problems that we will try to solve.
+
+#### Problem
+
+A problem that occurs is that the units will push eachother around to get to their destination. To fix this you have to bake in their position into the navigation mesh. A 'NavMeshAgent' that we are using in unity doesn't have that ability, but a 'NavMeshObstacle' does have that ability. But the 'NavMeshObstacle' doesn't move.
+
+Now here is a big but, we can NOT use them together on a unit. Of course there is a way to get around that. When we initiate an unit we'll just disable the 'NavMeshObstacle'. Now when the unit is stationary we'll have to use our 'NavMeshObstacle' to bake our position. The order that we enable and disable our meshes is very important here, we first want to disable our 'NavMeshAgent' and only after that we enable out 'NavMeshObstacle'. In reverse we'll have to wait a frame to enable out 'NavMeshAgent' again or ther will be shifting.
