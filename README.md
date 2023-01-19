@@ -25,7 +25,15 @@ As we are moving as a group to a certain destination, it is not possible for all
 A problem that occurs is that the units will push eachother around to get to their destination. To fix this you have to bake in their position into the navigation mesh. A 'NavMeshAgent' that we are using in unity doesn't have that ability, but a 'NavMeshObstacle' does have that ability. But the 'NavMeshObstacle' doesn't move.
 
 Now here is a big but, we can NOT use them together on a unit. Of course there is a way to get around that. When we initiate an unit we'll just disable the 'NavMeshObstacle'. Now when the unit is stationary we'll have to use our 'NavMeshObstacle' to bake our position. The order that we enable and disable our meshes is very important here, we first want to disable our 'NavMeshAgent' and only after that we enable out 'NavMeshObstacle'. In reverse we'll have to wait a frame to enable out 'NavMeshAgent' again or ther will be shifting.
+
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/113976115/213511720-6df2b7de-02d8-4226-b3ae-b33e7689c1b6.gif)
 
 ![image](https://user-images.githubusercontent.com/113976115/213511905-ae733bee-cc5f-41a6-b2d8-e92055f9a3dc.png)
 
+### Formation
+
+As seen already above, it is possible to move the agents as a square. This is calculated by the clicked point on the plane. When you click you will automatically calculate all the points around that point that is possible to go to. So there is already a grid for you ready when you have clicked. The algorithm that I have made isn't the most optimal or efficient but it is the easiest for me to understand.
+
+![image](https://user-images.githubusercontent.com/113976115/213515959-f8b7a99a-e308-4200-821a-24476e07ab8d.png)
+
+This part is the first for all the corners, the middle nodes of the rectangle ofcourse should only be calculated for the 'topLeft' corner and the 'botRight' corner. As this will fill in the gaps inbetween nicely.
