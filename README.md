@@ -36,4 +36,4 @@ As seen already above, it is possible to move the agents as a square. This is ca
 
 ![image](https://user-images.githubusercontent.com/113976115/213515959-f8b7a99a-e308-4200-821a-24476e07ab8d.png)
 
-This part is the first for all the corners, the middle nodes of the rectangle ofcourse should only be calculated for the 'topLeft' corner and the 'botRight' corner. As this will fill in the gaps inbetween nicely.
+This part is the first for all the corners, the middle nodes of the rectangle ofcourse should only be calculated for the 'topLeft' corner and the 'botRight' corner. As this will fill in the gaps inbetween nicely. We add all those points to a list and will use that later to move the units to that point in the list.
